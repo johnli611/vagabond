@@ -1,0 +1,11 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Vagabond
+    = stylesheet_link_tag 'bundles/app', media: 'all', 'data-turbolinks-track' => true
+    -#%script {:type => "text/javascript", :src  => "build/react.js"}
+    -#%script {:type => "text/javascript", :src  => "build/react-dom.js"}
+    -#= csrf_meta_tags
+  %body
+    = yield
