@@ -1,12 +1,21 @@
 import React          from 'react';
 import Navigation     from './components/navigation';
+import GalleriesList  from './components/galleriesList';
 
 
 class App extends React.Component {
 
   render() {
     return (
-      <Navigation />
+      <div>
+        <div>
+          <Navigation />
+        </div>
+
+        <div>
+          <GalleriesList />
+        </div>
+      </div>
     );
   }
 
